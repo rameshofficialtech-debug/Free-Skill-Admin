@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Learn job-ready digital skills with free online courses, certificates and guided learning paths at Free Skill Learning Hub.">
+  <meta name="theme-color" content="#5b4bdb">
+  <title>Free Skill Learning Hub | Learn Skills Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="platform-home">
+  <header class="site-header">
+    <div class="announcement"><span><i class="fa-solid fa-bolt"></i> Start your 1-week premium trial</span><a href="subscription.html">View plans <i class="fa-solid fa-arrow-right"></i></a></div>
+    <nav class="platform-nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span><span>Free Skill<small>Learning Hub</small></span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-panel" id="navLinks">
+        <a href="#categories">Categories</a><a href="#featured">Courses</a><a href="#instructors">Instructors</a><a href="#stories">Success stories</a>
+        <a href="subscription.html">Plans</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="icon-button wishlist-nav" id="wishlistButton" aria-label="View wishlist"><i class="fa-regular fa-heart"></i><span id="wishlistCount">0</span></button>
+        <a class="login-link" href="login.html">Log in</a><a class="btn nav-cta" href="register.html">Join for free</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="learning-hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container learning-hero-grid">
+        <div class="hero-copy reveal">
+          <span class="hero-kicker"><i class="fa-solid fa-sparkles"></i> Learn without limits</span>
+          <h1>Learn Free Skills <span>Online.</span><br>Build a better future.</h1>
+          <p>Practical courses, guided paths, and recognized certificates built to move your career forward.</p>
+          <form class="hero-search" id="heroSearch" role="search">
+            <i class="fa-solid fa-magnifying-glass"></i><input id="searchInput" type="search" placeholder="What do you want to learn?" aria-label="Search courses"><button type="submit">Search courses</button>
+          </form>
+          <div class="search-suggestions"><strong>Popular:</strong><button data-search="Python">Python</button><button data-search="Web Development">Web Development</button><button data-search="AI">AI</button><button data-search="UI/UX">UI/UX Design</button></div>
+          <div class="trusted-row"><div class="avatar-stack"><span>AR</span><span>SK</span><span>MJ</span><span>+8k</span></div><div><b>4.9 <span class="stars">★★★★★</span></b><small>Loved by learners worldwide</small></div></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Student learning online">
+          <div class="visual-card"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=900&q=80" alt="Student learning on a laptop" width="700" height="760"><div class="floating-card course-float"><span><i class="fa-solid fa-play"></i></span><div><small>Continue learning</small><b>UI Design Fundamentals</b><div class="mini-progress"><i style="width:72%"></i></div></div></div><div class="floating-card cert-float"><i class="fa-solid fa-award"></i><div><b>Certificate earned!</b><small>Python Essentials</small></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-strip" aria-label="Learning partners"><div class="container"><span>Learn skills from world-class platforms</span><div><b>Google</b><b>Microsoft</b><b>IBM</b><b>amazon web services</b><b>Cisco</b></div></div></section>
+
+    <section class="section-block" id="categories"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">Explore subjects</span><h2>Popular categories</h2><p>Start with a skill that matches your goals.</p></div><a href="#featured">Browse all courses <i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div></section>
+
+    <section class="section-block tinted" id="featured"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">Hand-picked for you</span><h2>Featured courses</h2><p>Top-rated learning experiences to build in-demand skills.</p></div><div class="carousel-controls"><button id="coursePrev" aria-label="Previous courses"><i class="fa-solid fa-arrow-left"></i></button><button id="courseNext" aria-label="Next courses"><i class="fa-solid fa-arrow-right"></i></button></div></div>
+      <div class="catalog-toolbar"><div class="filter-tabs" id="filterTabs"><button class="active" data-filter="All">All courses</button><button data-filter="Development">Development</button><button data-filter="Data">Data & AI</button><button data-filter="Design">Design</button><button data-filter="Marketing">Marketing</button></div><select id="levelFilter" aria-label="Filter by level"><option value="All">All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+      <div class="course-carousel" id="coursesGrid" aria-live="polite"></div><p class="empty-state" id="emptyState" hidden>No courses match that search. Try another skill.</p>
+    </div></section>
+
+    <section class="stats-section"><div class="container stats-grid"><div><span><i class="fa-solid fa-user-graduate"></i></span><strong>85K+</strong><small>Active students</small></div><div><span><i class="fa-solid fa-book-open"></i></span><strong>1,200+</strong><small>Free courses</small></div><div><span><i class="fa-solid fa-certificate"></i></span><strong>42K+</strong><small>Certificates earned</small></div><div><span><i class="fa-solid fa-earth-asia"></i></span><strong>120+</strong><small>Countries learning</small></div></div></section>
+
+    <section class="section-block" id="trending"><div class="container"><div class="section-heading"><div><span class="eyebrow">What learners love</span><h2>Trending this week</h2></div><a href="#featured">View all <i class="fa-solid fa-arrow-right"></i></a></div><div class="compact-course-grid" id="trendingGrid"></div></div></section>
+
+    <section class="section-block instructor-section" id="instructors"><div class="container"><div class="section-heading centered"><div><span class="eyebrow">Learn from the best</span><h2>Meet top instructors</h2><p>Industry practitioners who make complex skills feel simple.</p></div></div><div class="instructor-grid" id="instructorGrid"></div></div></section>
+
+    <section class="section-block tinted" id="stories"><div class="container"><div class="section-heading"><div><span class="eyebrow">Real learner outcomes</span><h2>Skills that changed careers</h2></div></div><div class="stories-grid"><article class="story-feature"><i class="fa-solid fa-quote-left"></i><blockquote>“I went from knowing basic HTML to landing a junior frontend role in four months. The learning path kept me focused every day.”</blockquote><div><span class="story-avatar">PS</span><p><b>Priya Sharma</b><small>Frontend Developer at TechNova</small></p><strong>+ Career switch</strong></div></article><article class="story-card"><div class="stars">★★★★★</div><p>“The projects gave me the confidence to build my first analytics portfolio and speak about it in interviews.”</p><footer><span class="story-avatar">RK</span><p><b>Rahul Kumar</b><small>Data Analyst</small></p></footer></article><article class="story-card"><div class="stars">★★★★★</div><p>“Short lessons, clear goals, and certificates I could share. It made learning alongside college manageable.”</p><footer><span class="story-avatar">AN</span><p><b>Ananya Nair</b><small>UI/UX Intern</small></p></footer></article></div></div></section>
+
+    <section class="section-block"><div class="container"><div class="section-heading"><div><span class="eyebrow">Fresh from our instructors</span><h2>Recently added</h2></div></div><div class="compact-course-grid" id="recentGrid"></div></div></section>
+
+    <section class="cta-section"><div class="container cta-card"><div><span>YOUR NEXT SKILL STARTS HERE</span><h2>Ready to build your future?</h2><p>Join thousands of learners and start a free course today.</p></div><div><a class="btn cta-primary" href="register.html">Start learning free <i class="fa-solid fa-arrow-right"></i></a><a class="btn cta-secondary" href="subscription.html">Explore premium</a></div></div></section>
+  </main>
+
+  <footer class="platform-footer"><div class="container footer-columns"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-graduation-cap"></i></span><span>Free Skill<small>Learning Hub</small></span></a><p>Skills for everyone. Learn freely, grow confidently, and prove what you know.</p><div class="socials"><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div></div><div><h3>Learn</h3><a href="#categories">Categories</a><a href="#featured">Popular courses</a><a href="#trending">New courses</a><a href="dashboard.html">Student dashboard</a></div><div><h3>Community</h3><a href="#stories">Success stories</a><a href="#instructors">Instructors</a><a href="#">Discussion forum</a><a href="#">Leaderboard</a></div><div><h3>Support</h3><a href="#">Help center</a><a href="#">FAQ</a><a href="mailto:hello@skillhub.com">Contact support</a><a href="admin-dashboard.html">Admin</a></div></div><div class="container footer-bottom"><span>© 2026 Free Skill Learning Hub</span><div><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+  <div class="toast" id="homeToast" role="status"></div>
+  <script src="script.js"></script><script src="home.js"></script>
+</body>
+</html>
